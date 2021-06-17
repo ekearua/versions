@@ -34,7 +34,7 @@
             "comments" : "",
             "groupId" : "a2b2099f-30db-3928-8099-f6c8b4cf8eaa",
             "id" : "c6eea359-68fe-3279-9188-391ec491b871",
-            "name" : "InputQueryingStage",
+            "name" : "InputInsertStage",
             "type" : "INPUT_PORT"
           },
           "zIndex" : 0
@@ -77,7 +77,7 @@
             "comments" : "",
             "groupId" : "a2b2099f-30db-3928-8099-f6c8b4cf8eaa",
             "id" : "8f77bdf0-f449-36d9-8fa9-6194109a865f",
-            "name" : "OutputQueryingStage",
+            "name" : "OutputInsertStage",
             "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
@@ -249,7 +249,7 @@
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "a2b2099f-30db-3928-8099-f6c8b4cf8eaa",
           "identifier" : "c6eea359-68fe-3279-9188-391ec491b871",
-          "name" : "InputQueryingStage",
+          "name" : "InputInsertStage",
           "position" : {
             "x" : 424.0,
             "y" : -88.0
@@ -265,7 +265,7 @@
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "a2b2099f-30db-3928-8099-f6c8b4cf8eaa",
           "identifier" : "8f77bdf0-f449-36d9-8fa9-6194109a865f",
-          "name" : "OutputQueryingStage",
+          "name" : "OutputInsertStage",
           "position" : {
             "x" : 424.0,
             "y" : 416.0
