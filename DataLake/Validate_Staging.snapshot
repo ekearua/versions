@@ -61,9 +61,10 @@
           "prioritizers" : [ ],
           "selectedRelationships" : [ "" ],
           "source" : {
+            "comments" : "",
             "groupId" : "44b4f70e-5980-3429-b8c3-8c55bce9657b",
             "id" : "de11a3bb-f9e3-3d24-8aad-0fa6c7bf6f11",
-            "name" : "QueryStagingInput",
+            "name" : "InputQueryStaging",
             "type" : "INPUT_PORT"
           },
           "zIndex" : 0
@@ -103,9 +104,10 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
+            "comments" : "",
             "groupId" : "44b4f70e-5980-3429-b8c3-8c55bce9657b",
             "id" : "4f84df92-a280-3a7e-8206-6c1891d34d28",
-            "name" : "WarehouseINput",
+            "name" : "OutputValidation",
             "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
@@ -134,11 +136,12 @@
         "identifier" : "44b4f70e-5980-3429-b8c3-8c55bce9657b",
         "inputPorts" : [ {
           "allowRemoteAccess" : false,
+          "comments" : "",
           "componentType" : "INPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "44b4f70e-5980-3429-b8c3-8c55bce9657b",
           "identifier" : "de11a3bb-f9e3-3d24-8aad-0fa6c7bf6f11",
-          "name" : "QueryStagingInput",
+          "name" : "InputQueryStaging",
           "position" : {
             "x" : 136.0,
             "y" : 136.0
@@ -149,11 +152,12 @@
         "name" : "ValidateStaging",
         "outputPorts" : [ {
           "allowRemoteAccess" : false,
+          "comments" : "",
           "componentType" : "OUTPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "44b4f70e-5980-3429-b8c3-8c55bce9657b",
           "identifier" : "4f84df92-a280-3a7e-8206-6c1891d34d28",
-          "name" : "WarehouseINput",
+          "name" : "OutputValidation",
           "position" : {
             "x" : 976.0,
             "y" : 536.0
@@ -161,8 +165,8 @@
           "type" : "OUTPUT_PORT"
         } ],
         "position" : {
-          "x" : 312.0,
-          "y" : 528.0
+          "x" : 296.0,
+          "y" : 552.0
         },
         "processGroups" : [ ],
         "processors" : [ {
