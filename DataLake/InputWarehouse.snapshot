@@ -31,9 +31,10 @@
           "prioritizers" : [ ],
           "selectedRelationships" : [ "" ],
           "source" : {
+            "comments" : "",
             "groupId" : "878ddaaf-af59-3000-b952-13e948b67838",
             "id" : "fb0593dd-268a-3fba-88e5-50190ac6bb00",
-            "name" : "ValidationInput",
+            "name" : "WarehouseInput",
             "type" : "INPUT_PORT"
           },
           "zIndex" : 0
@@ -409,11 +410,12 @@
         "identifier" : "878ddaaf-af59-3000-b952-13e948b67838",
         "inputPorts" : [ {
           "allowRemoteAccess" : false,
+          "comments" : "",
           "componentType" : "INPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "878ddaaf-af59-3000-b952-13e948b67838",
           "identifier" : "fb0593dd-268a-3fba-88e5-50190ac6bb00",
-          "name" : "ValidationInput",
+          "name" : "WarehouseInput",
           "position" : {
             "x" : 952.0,
             "y" : 8.0
@@ -424,8 +426,8 @@
         "name" : "InputWarehouse",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 832.0,
-          "y" : 584.0
+          "x" : 1016.0,
+          "y" : 568.0
         },
         "processGroups" : [ ],
         "processors" : [ {
