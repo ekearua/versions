@@ -74,9 +74,10 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
+            "comments" : "",
             "groupId" : "a2b2099f-30db-3928-8099-f6c8b4cf8eaa",
             "id" : "8f77bdf0-f449-36d9-8fa9-6194109a865f",
-            "name" : "OutputStaging",
+            "name" : "OutputQueryingStage",
             "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
@@ -259,11 +260,12 @@
         "name" : "InsertStaging",
         "outputPorts" : [ {
           "allowRemoteAccess" : false,
+          "comments" : "",
           "componentType" : "OUTPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "a2b2099f-30db-3928-8099-f6c8b4cf8eaa",
           "identifier" : "8f77bdf0-f449-36d9-8fa9-6194109a865f",
-          "name" : "OutputStaging",
+          "name" : "OutputQueryingStage",
           "position" : {
             "x" : 424.0,
             "y" : 416.0

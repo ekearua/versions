@@ -2,8 +2,8 @@ flows:
   a2bb8560-b70a-495b-a7de-52fd328aff9c: {ver: 1, file: ReadDataLake.snapshot, comments: Version
       1, author: anonymous, created: 1623931239470, flowName: ReadDataLake, flowDesc: Read
       Json from DataLake}
-  b6cf380d-fff1-46e8-bf00-acffade49802: {ver: 2, file: InputStaging.snapshot, comments: Renamed
-      Input Port, author: anonymous, created: 1623948886257, flowName: InputStaging,
+  b6cf380d-fff1-46e8-bf00-acffade49802: {ver: 3, file: InputStaging.snapshot, comments: Renamed
+      output port, author: anonymous, created: 1623948992674, flowName: InputStaging,
     flowDesc: Input data into Test Staging Database}
   1b106b63-2e96-4f56-890b-ff585ac5b3b4: {ver: 1, file: ScanDataLake.snapshot, comments: Version
       1, author: anonymous, created: 1623934463046, flowName: ScanDataLake, flowDesc: Scan
