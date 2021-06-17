@@ -123,7 +123,7 @@
             "comments" : "",
             "groupId" : "c901bac4-b3df-3bfd-be5a-725033d2aa40",
             "id" : "c9a1e614-edc9-3819-a4a5-10834468f98d",
-            "name" : "InputStagingValidation",
+            "name" : "InputQueryingStaging",
             "type" : "INPUT_PORT"
           },
           "zIndex" : 0
@@ -414,7 +414,7 @@
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "c901bac4-b3df-3bfd-be5a-725033d2aa40",
           "identifier" : "c9a1e614-edc9-3819-a4a5-10834468f98d",
-          "name" : "InputStagingValidation",
+          "name" : "InputQueryingStaging",
           "position" : {
             "x" : -16.0,
             "y" : 56.0
@@ -422,7 +422,7 @@
           "type" : "INPUT_PORT"
         } ],
         "labels" : [ ],
-        "name" : "ValidateStaging",
+        "name" : "QueryStaging",
         "outputPorts" : [ {
           "allowRemoteAccess" : false,
           "componentType" : "OUTPUT_PORT",
@@ -437,8 +437,8 @@
           "type" : "OUTPUT_PORT"
         } ],
         "position" : {
-          "x" : 864.0,
-          "y" : 320.0
+          "x" : 1016.0,
+          "y" : 288.0
         },
         "processGroups" : [ ],
         "processors" : [ {
