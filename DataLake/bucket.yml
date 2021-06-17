@@ -8,5 +8,7 @@ flows:
   1b106b63-2e96-4f56-890b-ff585ac5b3b4: {ver: 1, file: ScanDataLake.snapshot, comments: Version
       1, author: anonymous, created: 1623934463046, flowName: ScanDataLake, flowDesc: Scan
       DataLake for matching Names}
+  d45cf0d6-ef7b-4739-adfb-63e7bd58d314: {ver: 1, file: ValidateStaging.snapshot, comments: '',
+    author: anonymous, created: 1623941992174, flowName: ValidateStaging, flowDesc: ''}
 layoutVer: 1
 bucketId: e7dfdd73-ca3d-4ec4-be70-ea7e855946ca
