@@ -5,9 +5,15 @@ flows:
   b6cf380d-fff1-46e8-bf00-acffade49802: {ver: 3, file: InputStaging.snapshot, comments: Renamed
       output port, author: anonymous, created: 1623948992674, flowName: InputStaging,
     flowDesc: Input data into Test Staging Database}
-  1b106b63-2e96-4f56-890b-ff585ac5b3b4: {ver: 1, file: ScanDataLake.snapshot, comments: Version
-      1, author: anonymous, created: 1623934463046, flowName: ScanDataLake, flowDesc: Scan
-      DataLake for matching Names}
+  1b106b63-2e96-4f56-890b-ff585ac5b3b4:
+    ver: 2
+    file: ScanDataLake.snapshot
+    comments: |
+      Renamed input port and removed output port
+    author: anonymous
+    created: 1623949323718
+    flowName: ScanDataLake
+    flowDesc: Scan DataLake for matching Names
   6a356058-a57e-4953-a041-f678d156e1f1: {ver: 1, file: InputWarehouse.snapshot, comments: '',
     author: anonymous, created: 1623948368399, flowName: InputWarehouse, flowDesc: ''}
   f70fd012-b97d-4ed8-8ebe-a627e78ba7d8:

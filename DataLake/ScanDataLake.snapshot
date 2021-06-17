@@ -44,35 +44,6 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
-            "groupId" : "dbed9019-970d-301a-bb4a-4fd5912e5000",
-            "id" : "97c7217f-de1c-359d-8977-4df2e0d54bfc",
-            "name" : "OutputScanned",
-            "type" : "OUTPUT_PORT"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "dbed9019-970d-301a-bb4a-4fd5912e5000",
-          "identifier" : "95a6182d-128a-3201-8cf5-4337ecbce84a",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "matched", "unmatched" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "dbed9019-970d-301a-bb4a-4fd5912e5000",
-            "id" : "1f8cc443-45e0-360d-bf7f-636fc8139c18",
-            "name" : "ScanContent",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
             "comments" : "",
             "groupId" : "dbed9019-970d-301a-bb4a-4fd5912e5000",
             "id" : "de72d220-747d-3729-8c93-c8d9e313b080",
@@ -120,9 +91,10 @@
           "prioritizers" : [ ],
           "selectedRelationships" : [ "" ],
           "source" : {
+            "comments" : "",
             "groupId" : "dbed9019-970d-301a-bb4a-4fd5912e5000",
             "id" : "bac37b99-51af-354a-aa7a-47a29aee505c",
-            "name" : "InputDataLake",
+            "name" : "InputScanLake",
             "type" : "INPUT_PORT"
           },
           "zIndex" : 0
@@ -134,11 +106,12 @@
         "identifier" : "dbed9019-970d-301a-bb4a-4fd5912e5000",
         "inputPorts" : [ {
           "allowRemoteAccess" : false,
+          "comments" : "",
           "componentType" : "INPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "dbed9019-970d-301a-bb4a-4fd5912e5000",
           "identifier" : "bac37b99-51af-354a-aa7a-47a29aee505c",
-          "name" : "InputDataLake",
+          "name" : "InputScanLake",
           "position" : {
             "x" : 848.0,
             "y" : -32.0
@@ -147,22 +120,10 @@
         } ],
         "labels" : [ ],
         "name" : "ScanLake",
-        "outputPorts" : [ {
-          "allowRemoteAccess" : false,
-          "componentType" : "OUTPUT_PORT",
-          "concurrentlySchedulableTaskCount" : 1,
-          "groupIdentifier" : "dbed9019-970d-301a-bb4a-4fd5912e5000",
-          "identifier" : "97c7217f-de1c-359d-8977-4df2e0d54bfc",
-          "name" : "OutputScanned",
-          "position" : {
-            "x" : 848.0,
-            "y" : 296.0
-          },
-          "type" : "OUTPUT_PORT"
-        } ],
+        "outputPorts" : [ ],
         "position" : {
-          "x" : 486.0,
-          "y" : 283.0
+          "x" : 1016.0,
+          "y" : 0.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -293,7 +254,7 @@
           "type" : "org.apache.nifi.processors.slack.PutSlack",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ ],
+          "autoTerminatedRelationships" : [ "unmatched" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-standard-nar",
