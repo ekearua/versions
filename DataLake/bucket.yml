@@ -8,6 +8,8 @@ flows:
   1b106b63-2e96-4f56-890b-ff585ac5b3b4: {ver: 1, file: ScanDataLake.snapshot, comments: Version
       1, author: anonymous, created: 1623934463046, flowName: ScanDataLake, flowDesc: Scan
       DataLake for matching Names}
+  6a356058-a57e-4953-a041-f678d156e1f1: {ver: 1, file: InputWarehouse.snapshot, comments: '',
+    author: anonymous, created: 1623948368399, flowName: InputWarehouse, flowDesc: ''}
   f70fd012-b97d-4ed8-8ebe-a627e78ba7d8: {ver: 1, file: Validate_Staging.snapshot,
     comments: '', author: anonymous, created: 1623947396709, flowName: Validate Staging,
     flowDesc: Validate staging data with great expectations}
