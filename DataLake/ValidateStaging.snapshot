@@ -44,6 +44,7 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
+            "comments" : "",
             "groupId" : "c901bac4-b3df-3bfd-be5a-725033d2aa40",
             "id" : "e2b4cdc7-10a3-30ad-9a02-115d03c3f7f3",
             "name" : "OutputQueryingStage",
@@ -290,7 +291,7 @@
             "dbcp-min-evictable-idle-time" : "30 mins",
             "Max Total Connections" : "8",
             "dbcp-max-conn-lifetime" : "-1",
-            "Database Connection URL" : "jdbc:postgresql://localhost:5432/dataengineering",
+            "Database Connection URL" : "jdbc:postgresql://localhost:5432/test",
             "dbcp-time-between-eviction-runs" : "-1",
             "Database User" : "eke",
             "dbcp-soft-min-evictable-idle-time" : "-1",
@@ -425,6 +426,7 @@
         "name" : "QueryStaging",
         "outputPorts" : [ {
           "allowRemoteAccess" : false,
+          "comments" : "",
           "componentType" : "OUTPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "c901bac4-b3df-3bfd-be5a-725033d2aa40",
@@ -437,8 +439,8 @@
           "type" : "OUTPUT_PORT"
         } ],
         "position" : {
-          "x" : 1016.0,
-          "y" : 288.0
+          "x" : 304.0,
+          "y" : 296.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -463,7 +465,7 @@
           },
           "properties" : {
             "Destination" : "flowfile-attribute",
-            "recordcount" : "$.{'count'}",
+            "recordcount" : "$.['count']",
             "Return Type" : "auto-detect",
             "Null Value Representation" : "empty string",
             "Path Not Found Behavior" : "ignore"
@@ -537,7 +539,7 @@
             "dbf-default-scale" : "0",
             "esql-output-batch-size" : "0",
             "esql-fetch-size" : "0",
-            "SQL select query" : "select count(*) from ${table}",
+            "SQL select query" : "select count(*) from ${table};",
             "esqlrecord-normalize" : "false"
           },
           "propertyDescriptors" : {
@@ -674,7 +676,9 @@
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
-        "variables" : { }
+        "variables" : {
+          "table" : "staging"
+        }
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : { }

@@ -2,6 +2,9 @@ flows:
   a2bb8560-b70a-495b-a7de-52fd328aff9c: {ver: 2, file: ReadDataLake.snapshot, comments: Increased
       getfile batch size to 1000, author: anonymous, created: 1624032093129, flowName: ReadDataLake,
     flowDesc: Read Json from DataLake}
+  b6cf380d-fff1-46e8-bf00-acffade49802: {ver: 4, file: InputStaging.snapshot, comments: Port
+      Rename, author: anonymous, created: 1623949612703, flowName: InputStaging, flowDesc: Input
+      data into Test Staging Database}
   1b106b63-2e96-4f56-890b-ff585ac5b3b4:
     ver: 2
     file: ScanDataLake.snapshot
@@ -11,9 +14,6 @@ flows:
     created: 1623949323718
     flowName: ScanDataLake
     flowDesc: Scan DataLake for matching Names
-  b6cf380d-fff1-46e8-bf00-acffade49802: {ver: 4, file: InputStaging.snapshot, comments: Port
-      Rename, author: anonymous, created: 1623949612703, flowName: InputStaging, flowDesc: Input
-      data into Test Staging Database}
   6a356058-a57e-4953-a041-f678d156e1f1:
     ver: 2
     file: InputWarehouse.snapshot
@@ -32,8 +32,14 @@ flows:
     created: 1623949622962
     flowName: Validate Staging
     flowDesc: Validate staging data with great expectations
-  d45cf0d6-ef7b-4739-adfb-63e7bd58d314: {ver: 2, file: ValidateStaging.snapshot, comments: Another
-      port rename, author: anonymous, created: 1623949592081, flowName: ValidateStaging,
-    flowDesc: ''}
+  d45cf0d6-ef7b-4739-adfb-63e7bd58d314:
+    ver: 3
+    file: ValidateStaging.snapshot
+    comments: |
+      Final testing version - reconfigured processors
+    author: anonymous
+    created: 1624091502991
+    flowName: ValidateStaging
+    flowDesc: ''
 layoutVer: 1
 bucketId: e7dfdd73-ca3d-4ec4-be70-ea7e855946ca
