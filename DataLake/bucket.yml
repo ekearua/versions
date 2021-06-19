@@ -14,15 +14,9 @@ flows:
     created: 1623949323718
     flowName: ScanDataLake
     flowDesc: Scan DataLake for matching Names
-  6a356058-a57e-4953-a041-f678d156e1f1:
-    ver: 2
-    file: InputWarehouse.snapshot
-    comments: |
-      Port Rename
-    author: anonymous
-    created: 1623949632365
-    flowName: InputWarehouse
-    flowDesc: ''
+  6a356058-a57e-4953-a041-f678d156e1f1: {ver: 3, file: InputWarehouse.snapshot, comments: Corrected
+      database information errors., author: anonymous, created: 1624091684599, flowName: InputWarehouse,
+    flowDesc: ''}
   f70fd012-b97d-4ed8-8ebe-a627e78ba7d8: {ver: 4, file: Validate_Staging.snapshot,
     comments: Edited checkpoint file to include 'results' and evaluateJson processor.,
     author: anonymous, created: 1624091652963, flowName: Validate Staging, flowDesc: Validate
