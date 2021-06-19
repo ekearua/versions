@@ -237,7 +237,7 @@
           "properties" : {
             "argumentsStrategy" : "Command Arguments Property",
             "Max Attribute Length" : "256",
-            "Command Path" : "python3",
+            "Command Path" : "/home/eke/pgAdmin4/pgAdmin4/bin/python3",
             "Working Directory" : "/home/eke/staging/great_expectations/uncommitted",
             "Argument Delimiter" : ";",
             "Ignore STDIN" : "false",
@@ -321,7 +321,7 @@
             "y" : 288.0
           },
           "properties" : {
-            "result" : "$['result']",
+            "result" : "$.result",
             "Destination" : "flowfile-attribute",
             "Return Type" : "auto-detect",
             "Null Value Representation" : "empty string",

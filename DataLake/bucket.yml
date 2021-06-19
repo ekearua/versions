@@ -23,15 +23,10 @@ flows:
     created: 1623949632365
     flowName: InputWarehouse
     flowDesc: ''
-  f70fd012-b97d-4ed8-8ebe-a627e78ba7d8:
-    ver: 3
-    file: Validate_Staging.snapshot
-    comments: |
-      Port Rename
-    author: anonymous
-    created: 1623949622962
-    flowName: Validate Staging
-    flowDesc: Validate staging data with great expectations
+  f70fd012-b97d-4ed8-8ebe-a627e78ba7d8: {ver: 4, file: Validate_Staging.snapshot,
+    comments: Edited checkpoint file to include 'results' and evaluateJson processor.,
+    author: anonymous, created: 1624091652963, flowName: Validate Staging, flowDesc: Validate
+      staging data with great expectations}
   d45cf0d6-ef7b-4739-adfb-63e7bd58d314:
     ver: 3
     file: ValidateStaging.snapshot
