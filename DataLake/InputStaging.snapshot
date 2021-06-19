@@ -59,7 +59,7 @@
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure", "success", "retry" ],
+          "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
             "groupId" : "a2b2099f-30db-3928-8099-f6c8b4cf8eaa",
@@ -273,8 +273,8 @@
           "type" : "OUTPUT_PORT"
         } ],
         "position" : {
-          "x" : 296.0,
-          "y" : 272.0
+          "x" : 1016.0,
+          "y" : 296.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -323,7 +323,7 @@
           "type" : "org.apache.nifi.processors.standard.UpdateCounter",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ ],
+          "autoTerminatedRelationships" : [ "failure", "retry" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-standard-nar",
@@ -410,7 +410,9 @@
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
-        "variables" : { }
+        "variables" : {
+          "table" : "staging"
+        }
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : { }

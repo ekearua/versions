@@ -2,9 +2,9 @@ flows:
   a2bb8560-b70a-495b-a7de-52fd328aff9c: {ver: 2, file: ReadDataLake.snapshot, comments: Increased
       getfile batch size to 1000, author: anonymous, created: 1624032093129, flowName: ReadDataLake,
     flowDesc: Read Json from DataLake}
-  b6cf380d-fff1-46e8-bf00-acffade49802: {ver: 4, file: InputStaging.snapshot, comments: Port
-      Rename, author: anonymous, created: 1623949612703, flowName: InputStaging, flowDesc: Input
-      data into Test Staging Database}
+  b6cf380d-fff1-46e8-bf00-acffade49802: {ver: 5, file: InputStaging.snapshot, comments: Changed
+      getfile batch size to eliminate primary key violations, author: anonymous, created: 1624091569352,
+    flowName: InputStaging, flowDesc: Input data into Test Staging Database}
   1b106b63-2e96-4f56-890b-ff585ac5b3b4:
     ver: 2
     file: ScanDataLake.snapshot
